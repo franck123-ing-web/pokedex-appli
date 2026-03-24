@@ -21,7 +21,7 @@ export default function PokemonDetailScreen() {
   const [error, setError] = useState<string | null>(null);
   const [favorites, setFavorites] = useState<number[]>([]);
 
-  // 🔥 Fetch Pokémon
+  //  Fetch Pokémon
   useEffect(() => {
     if (!name) return;
     const fetchPokemon = async () => {
@@ -38,7 +38,7 @@ export default function PokemonDetailScreen() {
     fetchPokemon();
   }, [name]);
 
-  // ❤️ Recharger les favoris à chaque fois que l'écran devient actif
+  // Recharger les favoris à chaque fois que l'écran devient actif
   useFocusEffect(
     useCallback(() => {
       const loadFavorites = async () => {
@@ -49,7 +49,7 @@ export default function PokemonDetailScreen() {
     }, [])
   );
 
-  // ❤️ Ajouter/retirer favoris
+  // Ajouter/retirer favoris
   const toggleFavorite = async (id: number) => {
     let newFav: number[];
     if (favorites.includes(id)) {
@@ -131,7 +131,7 @@ export default function PokemonDetailScreen() {
   );
 }
 
-// Styles identiques à ton précédent code
+// Styles
 const styles = StyleSheet.create({
   container: { flex: 1 },
   scroll: { padding: 20, alignItems: "center", paddingTop: 80, paddingBottom: 40 },

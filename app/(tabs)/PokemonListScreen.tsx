@@ -73,7 +73,7 @@ export default function PokemonListScreen() {
     setFilteredData(filtered);
   }, [search, data]);
 
-  // ❤️ Ajouter/retirer favoris
+  // Ajouter/retirer favoris
   const toggleFavorite = async (id: number) => {
     let newFav: number[];
     if (favorites.includes(id)) {
@@ -85,10 +85,10 @@ export default function PokemonListScreen() {
     await AsyncStorage.setItem('favorites', JSON.stringify(newFav));
   };
 
-  // ⏱️ Ajouter à l'historique
+  // Ajouter à l'historique
   const addToHistory = async (id: number) => {
     let newHist = [id, ...history.filter(h => h !== id)];
-    if (newHist.length > 10) newHist = newHist.slice(0, 10); // max 10 Pokémon
+    if (newHist.length > 50) newHist = newHist.slice(0, 50);
     setHistory(newHist);
     await AsyncStorage.setItem('history', JSON.stringify(newHist));
   };
@@ -123,7 +123,7 @@ export default function PokemonListScreen() {
         </View>
       </View>
 
-      {/* SEARCH */}
+      {/* RECHERCHE */}
       <View style={styles.searchContainer}>
         <TextInput
           placeholder="Rechercher (nom, type, id)"
@@ -199,7 +199,7 @@ export default function PokemonListScreen() {
   );
 }
 
-// Styles identiques à ton précédent code
+// Styles
 const styles = StyleSheet.create({
   container: { flex: 1, paddingTop: 50, paddingHorizontal: 15 },
   header: { flexDirection: "row", alignItems: "center", marginBottom: 10, paddingBottom: 10 },

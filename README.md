@@ -51,7 +51,7 @@ npm install
 npx expo start --tunnel
 
 Expo ouvrira le Metro Bundler.
-on pourras tester sur simulateur iOS/Android ou via l’application Expo Go sur ton téléphone.
+Tu pourras tester sur simulateur iOS/Android ou via l’application Expo Go sur ton téléphone.
 
 ## Design
 Interface moderne avec gradient et couleurs vives.

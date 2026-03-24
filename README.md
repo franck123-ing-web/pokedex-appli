@@ -39,6 +39,7 @@ L'application utilise l'API publique [PokéAPI](https://pokeapi.co/) pour récup
 
 
 git clone https://github.com/franck123-ing-web/pokedex-appli.git
+
 cd pokedex-app
 
 2. Installer les dépendances : 

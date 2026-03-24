@@ -42,11 +42,11 @@ git clone https://github.com/franck123-ing-web/pokedex-appli.git
 
 cd pokedex-app
 
-2. Installer les dépendances : 
+# 2. Installer les dépendances : 
 
 npm install
 
-3. Lancer l’application
+# 3. Lancer l’application
 
 npx expo start --tunnel
 

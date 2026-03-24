@@ -62,7 +62,8 @@ Détail avec stats représentées graphiquement.
 Favoris : sauvegardé avec AsyncStorage sous la clé "favorites".
 Historique : sauvegardé avec AsyncStorage sous la clé "history" (max 50 Pokémon)
 
-Liens utiles
+## Liens utiles
+
 https://pokeapi.co/
  : API utilisée pour récupérer les données
 https://reactnative.dev/

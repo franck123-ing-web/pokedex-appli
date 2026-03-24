@@ -24,7 +24,7 @@ L'application utilise l'API publique [PokéAPI](https://pokeapi.co/) pour récup
 
 ##  Technologies utilisées
 
-- **React Native** (JavaScript/TypeScript)  
+- **React Native** (TypeScript)  
 - **Expo** pour simplifier le développement mobile  
 - **Expo Router** pour la navigation entre les écrans  
 - **AsyncStorage** pour le stockage local  

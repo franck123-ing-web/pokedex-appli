@@ -35,7 +35,7 @@ L'application utilise l'API publique [PokéAPI](https://pokeapi.co/) pour récup
 
 ##  Installation
 
-1. Cloner le projet :
+# 1. Cloner le projet :
 
 
 git clone https://github.com/franck123-ing-web/pokedex-appli.git

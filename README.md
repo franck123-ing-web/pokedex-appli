@@ -1,50 +1,42 @@
-# Welcome to your Expo app 👋
+# Pokedex App 
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Une application mobile React Native/Expo qui permet de consulter les Pokémon, leurs caractéristiques, et de gérer ses favoris et son historique de consultation.  
 
-## Get started
+L'application utilise l'API publique [PokéAPI](https://pokeapi.co/) pour récupérer toutes les données.
 
-1. Install dependencies
 
-   ```bash
-   npm install
-   ```
 
-2. Start the app
+##  Fonctionnalités
 
-   ```bash
-   npx expo start
-   ```
+- Liste des 50 premiers Pokémon avec images, nom, types et ID.
+- Recherche avancée par **nom**, **type**, ou **ID**.
+- Favoris : ajouter ou retirer un Pokémon de sa liste de favoris.
+- Historique : consulter les derniers Pokémon vus (jusqu’à 10).
+- Détail d’un Pokémon avec :
+  - Image, nom et ID
+  - Types
+  - Taille et poids
+  - Statistiques (HP, Attaque, Défense, etc.) avec barre graphique
+  - Bouton cœur pour ajouter aux favoris
+- Stockage local avec `AsyncStorage` pour **favoris** et **historique**, persistant entre les sessions.
 
-In the output, you'll find options to open the app in a
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+##  Technologies utilisées
 
-## Get a fresh project
+- **React Native** (JavaScript/TypeScript)  
+- **Expo** pour simplifier le développement mobile  
+- **Expo Router** pour la navigation entre les écrans  
+- **AsyncStorage** pour le stockage local  
+- **LinearGradient** pour un design moderne  
+- **PokéAPI** comme source de données  
 
-When you're ready, run:
+
+
+##  Installation
+
+1. Cloner le projet :
 
 ```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+git clone [https://github.com/ton-nom-utilisateur/pokedex-app.git](https://github.com/franck123-ing-web/pokedex-appli.git)
+cd pokedex-app

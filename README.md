@@ -11,7 +11,7 @@ L'application utilise l'API publique [PokéAPI](https://pokeapi.co/) pour récup
 - Liste des 50 premiers Pokémon avec images, nom, types et ID.
 - Recherche avancée par **nom**, **type**, ou **ID**.
 - Favoris : ajouter ou retirer un Pokémon de sa liste de favoris.
-- Historique : consulter les derniers Pokémon vus (jusqu’à 10).
+- Historique : consulter les derniers Pokémon vus (jusqu’à 50).
 - Détail d’un Pokémon avec :
   - Image, nom et ID
   - Types

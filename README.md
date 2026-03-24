@@ -38,5 +38,35 @@ L'application utilise l'API publique [PokéAPI](https://pokeapi.co/) pour récup
 1. Cloner le projet :
 
 ```bash
-git clone [https://github.com/ton-nom-utilisateur/pokedex-app.git](https://github.com/franck123-ing-web/pokedex-appli.git)
+git clone https://github.com/franck123-ing-web/pokedex-appli.git
 cd pokedex-app
+
+2. Installer les dépendances : 
+```bash
+npm install
+
+3. Lancer l’application
+```bash
+npx expo start --tunnel
+
+Expo ouvrira le Metro Bundler.
+Tu pourras tester sur simulateur iOS/Android ou via l’application Expo Go sur ton téléphone.
+
+## Design
+Interface moderne avec gradient et couleurs vives.
+Barre de recherche avec croix pour annuler la recherche.
+Liste avec cartes de Pokémon, incluant le cœur pour les favoris.
+Détail avec stats représentées graphiquement.
+
+## Stockage local
+Favoris : sauvegardé avec AsyncStorage sous la clé "favorites".
+Historique : sauvegardé avec AsyncStorage sous la clé "history" (max 50 Pokémon)
+
+Liens utiles
+https://pokeapi.co/
+ : API utilisée pour récupérer les données
+https://reactnative.dev/
+ : Documentation officielle
+https://docs.expo.dev/
+ : Documentation officielle
+

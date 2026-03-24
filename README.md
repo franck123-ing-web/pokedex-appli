@@ -50,7 +50,7 @@ npm install
 npx expo start --tunnel
 
 Expo ouvrira le Metro Bundler.
-Tu pourras tester sur simulateur iOS/Android ou via l’application Expo Go sur ton téléphone.
+on pourras tester sur simulateur iOS/Android ou via l’application Expo Go sur ton téléphone.
 
 ## Design
 Interface moderne avec gradient et couleurs vives.
@@ -66,8 +66,10 @@ Historique : sauvegardé avec AsyncStorage sous la clé "history" (max 50 Pokém
 
 https://pokeapi.co/
  : API utilisée pour récupérer les données
+ 
 https://reactnative.dev/
  : Documentation officielle
+ 
 https://docs.expo.dev/
  : Documentation officielle
 

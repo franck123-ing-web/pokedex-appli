@@ -1,7 +1,7 @@
 # Pokedex App 
 
 
-lancer l'application avec: expo start et appuyer sur la touche W pour la lancer en web
+lancer l'application avec : npx expo start --tunnel et appuyer sur la touche W pour la lancer en web
 
 Une application mobile React Native/Expo qui permet de consulter les Pokémon, leurs caractéristiques, et de gérer ses favoris et son historique de consultation.  
 

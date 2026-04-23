@@ -77,3 +77,6 @@ https://reactnative.dev/
 https://docs.expo.dev/
  : Documentation officielle
 
+
+installer le ngrokk : npm uninstall -g ngrok                             
+ npm install -g ngrok            

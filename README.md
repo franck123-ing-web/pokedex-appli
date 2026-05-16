@@ -1,5 +1,8 @@
 # Pokedex App 
 
+
+lancer l'application avec : npx expo start --tunnel et appuyer sur la touche W pour la lancer en web
+
 Une application mobile React Native/Expo qui permet de consulter les Pokémon, leurs caractéristiques, et de gérer ses favoris et son historique de consultation.  
 
 L'application utilise l'API publique [PokéAPI](https://pokeapi.co/) pour récupérer toutes les données.
@@ -11,7 +14,7 @@ L'application utilise l'API publique [PokéAPI](https://pokeapi.co/) pour récup
 - Liste des 50 premiers Pokémon avec images, nom, types et ID.
 - Recherche avancée par **nom**, **type**, ou **ID**.
 - Favoris : ajouter ou retirer un Pokémon de sa liste de favoris.
-- Historique : consulter les derniers Pokémon vus (jusqu’à 10).
+- Historique : consulter les derniers Pokémon vus (jusqu’à 50).
 - Détail d’un Pokémon avec :
   - Image, nom et ID
   - Types
@@ -24,7 +27,7 @@ L'application utilise l'API publique [PokéAPI](https://pokeapi.co/) pour récup
 
 ##  Technologies utilisées
 
-- **React Native** (JavaScript/TypeScript)  
+- **React Native** (Javascript/TypeScript)  
 - **Expo** pour simplifier le développement mobile  
 - **Expo Router** pour la navigation entre les écrans  
 - **AsyncStorage** pour le stockage local  
@@ -35,8 +38,45 @@ L'application utilise l'API publique [PokéAPI](https://pokeapi.co/) pour récup
 
 ##  Installation
 
-1. Cloner le projet :
+# 1. Cloner le projet :
 
-```bash
-git clone [https://github.com/ton-nom-utilisateur/pokedex-app.git](https://github.com/franck123-ing-web/pokedex-appli.git)
+
+git clone https://github.com/franck123-ing-web/pokedex-appli.git
+
 cd pokedex-app
+
+# 2. Installer les dépendances : 
+
+npm install
+
+# 3. Lancer l’application
+
+npx expo start --tunnel
+
+Expo ouvrira le Metro Bundler.
+Tu pourras tester sur simulateur iOS/Android ou via l’application Expo Go sur ton téléphone.
+
+## Design
+Interface moderne avec gradient et couleurs vives.
+Barre de recherche avec croix pour annuler la recherche.
+Liste avec cartes de Pokémon, incluant le cœur pour les favoris.
+Détail avec stats représentées graphiquement.
+
+## Stockage local
+Favoris : sauvegardé avec AsyncStorage sous la clé "favorites".
+Historique : sauvegardé avec AsyncStorage sous la clé "history" (max 50 Pokémon)
+
+## Liens utiles
+
+https://pokeapi.co/
+ : API utilisée pour récupérer les données
+ 
+https://reactnative.dev/
+ : Documentation officielle
+ 
+https://docs.expo.dev/
+ : Documentation officielle
+
+
+installer le ngrokk : npm uninstall -g ngrok                             
+ npm install -g ngrok            
